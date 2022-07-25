@@ -51,6 +51,8 @@ int main()
         if(count==0 & i!=1) cout<<i<<endl;
     }
 }
+// Complexity will be O(n)
+
 
 // #Approach3
 
@@ -59,7 +61,7 @@ int main()
     for(int i=1;i<=100;i++)
     {
         int count=0;
-        for(int j=2;j<=sqrt(i);j++)
+        for(int j=2;j<=sqrt(i);j++) //any number will be divisible by its square root too
         {
             if(i%j==0)
             {
@@ -69,3 +71,4 @@ int main()
         if(count==0 && i!=1) cout<<i<<endl;
     }
 }
+// Complexity will be √n
